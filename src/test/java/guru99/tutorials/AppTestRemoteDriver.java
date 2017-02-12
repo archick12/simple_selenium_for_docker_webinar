@@ -18,7 +18,7 @@ public class AppTestRemoteDriver {
     public void simpleTest() {
         WebDriver driver = null;
         try {
-            driver = new RemoteWebDriver(new URL("http://localhost:32769/wd/hub"),
+            driver = new RemoteWebDriver(new URL("http://localhost:32768/wd/hub"),
                     DesiredCapabilities.firefox());
         } catch (MalformedURLException e) {
             e.printStackTrace();
